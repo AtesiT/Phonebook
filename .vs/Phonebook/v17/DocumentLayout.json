@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|d:\\keys and documents\\labs\\4 course\\phonebook\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|d:\\keys and documents\\labs\\4 course\\phonebook\\splashscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|solutionrelative:splashscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|d:\\keys and documents\\labs\\4 course\\phonebook\\animatedshader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|solutionrelative:animatedshader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|d:\\keys and documents\\labs\\4 course\\phonebook\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24473B21-F4A5-4949-9D53-DE07551EC8AB}|Phonebook.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +34,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SplashScreen.xaml",
               "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\SplashScreen.xaml",
               "RelativeDocumentMoniker": "SplashScreen.xaml",
               "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\SplashScreen.xaml",
               "RelativeToolTip": "SplashScreen.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-01T06:42:44.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ContactDetailPage.xaml",
               "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\ContactDetailPage.xaml",
               "RelativeDocumentMoniker": "ContactDetailPage.xaml",
@@ -60,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AnimatedShader.cs",
               "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\AnimatedShader.cs",
               "RelativeDocumentMoniker": "AnimatedShader.cs",
@@ -73,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Contact.cs",
               "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "Models\\Contact.cs",
               "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\Models\\Contact.cs",
               "RelativeToolTip": "Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T06:38:11.719Z",
               "EditorCaption": ""
