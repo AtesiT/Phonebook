@@ -1,12 +1,11 @@
-﻿public partial class App : Application
+﻿namespace Phonebook
 {
-    public App()
+    public partial class App : Application
     {
-        InitializeComponent();
-    }
-
-    protected override Window CreateWindow(IActivationState? activationState)
-    {
-        return new Window(new NavigationPage(new SplashScreenPage()));
+        public App()
+        {
+            InitializeComponent();
+            MainPage = new SplashScreenPage();
+        }
     }
 }

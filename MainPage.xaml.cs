@@ -8,8 +8,9 @@ namespace Phonebook;
 
 public partial class MainPage : ContentPage
 {
-    private DatabaseService _databaseService;
-    private List<Contact> _allContacts;
+    private readonly DatabaseService _databaseService;
+    private List<Contact> _allContacts = new();
+
     public MainPage()
     {
         InitializeComponent();
@@ -30,51 +31,53 @@ public partial class MainPage : ContentPage
 
     private async Task<List<Contact>> GetAllContacts()
     {
-        _allContacts = await _databaseService.GetContactsAsync();
+        var contacts = await _databaseService.GetContactsAsync();
 
-        PermissionStatus status1 = await Permissions.RequestAsync<Permissions.ContactsRead>();
-        PermissionStatus status2 = await Permissions.RequestAsync<Permissions.ContactsWrite>();
-
-        if (status1 == PermissionStatus.Granted && status2 == PermissionStatus.Granted)
+        try
         {
-            var contacts = GetContacts();
-            await foreach (var contact in contacts)
+            PermissionStatus status1 = await Permissions.RequestAsync<Permissions.ContactsRead>();
+            PermissionStatus status2 = await Permissions.RequestAsync<Permissions.ContactsWrite>();
+
+            if (status1 == PermissionStatus.Granted && status2 == PermissionStatus.Granted)
             {
-                _allContacts.Add(contact);
+                await foreach (var contact in GetDeviceContacts())
+                {
+                    contacts.Add(contact);
+                }
             }
         }
-        return _allContacts;
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Error loading device contacts: {ex.Message}");
+        }
+
+        return contacts;
     }
 
-    public async IAsyncEnumerable<Contact> GetContacts()
+    private async IAsyncEnumerable<Contact> GetDeviceContacts()
     {
-        var contacts = await Communication.Contacts.Default.GetAllAsync();
-        if (contacts == null)
+        var deviceContacts = await Communication.Contacts.Default.GetAllAsync();
+        if (deviceContacts == null)
             yield break;
 
         int i = 0;
-        foreach (var contact in contacts)
+        foreach (var contact in deviceContacts)
         {
             i++;
             if (i >= 10) yield break;
 
-            var _contact = new Contact();
-            int _id;
-            var success = int.TryParse(contact.Id, out _id);
+            var newContact = new Contact
+            {
+                Id = 0,
+                Name = contact.DisplayName,
+                PhoneNumber = contact.Phones.FirstOrDefault()?.PhoneNumber ?? "",
+                Email = contact.Emails.FirstOrDefault()?.EmailAddress ?? "",
+                Address = "",
+                Description = "",
+                PhotoPath = ""
+            };
 
-            if (success)
-                _contact.Id = _id;
-            else
-                _contact.Id = 0;
-
-            _contact.Name = contact.DisplayName;
-            _contact.PhoneNumber = contact.Phones.FirstOrDefault()?.PhoneNumber ?? "";
-            _contact.Email = contact.Emails.FirstOrDefault()?.EmailAddress ?? "";
-            _contact.Address = "";
-            _contact.Description = "";
-            _contact.PhotoPath = "";
-
-            yield return _contact;
+            yield return newContact;
         }
     }
 
@@ -85,13 +88,6 @@ public partial class MainPage : ContentPage
             await Navigation.PushAsync(new ContactDetailPage(selectedContact));
             contactsList.SelectedItem = null;
         }
-    }
-
-    private async void OnSearchTextChanged(object sender, TextChangedEventArgs e)
-    {
-        var searchTerm = e.NewTextValue;
-        var filteredContacts = await _databaseService.SearchContactsAsync(searchTerm);
-        contactsList.ItemsSource = filteredContacts;
     }
 
     private async void OnAddContactClicked(object sender, EventArgs e)

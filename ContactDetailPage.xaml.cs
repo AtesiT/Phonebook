@@ -7,7 +7,8 @@ namespace Phonebook
     public partial class ContactDetailPage : ContentPage
     {
         private Contact _contact;
-        private DatabaseService _databaseService;
+        private readonly DatabaseService _databaseService;
+
         public ContactDetailPage(Contact contact)
         {
             InitializeComponent();
@@ -28,11 +29,11 @@ namespace Phonebook
                 }
             }
 
-            nameEntry.Text = _contact.Name;
-            phoneEntry.Text = _contact.PhoneNumber;
-            descriptionEntry.Text = _contact.Description;
-            addressEntry.Text = _contact.Address;
-            emailEntry.Text = _contact.Email;
+            nameEntry.Text = _contact.Name ?? "";
+            phoneEntry.Text = _contact.PhoneNumber ?? "";
+            descriptionEntry.Text = _contact.Description ?? "";
+            addressEntry.Text = _contact.Address ?? "";
+            emailEntry.Text = _contact.Email ?? "";
 
             if (!string.IsNullOrEmpty(_contact.PhotoPath) && File.Exists(_contact.PhotoPath))
             {
@@ -71,15 +72,6 @@ namespace Phonebook
         {
             try
             {
-                var readStatus = await Permissions.RequestAsync<Permissions.StorageRead>();
-                var writeStatus = await Permissions.RequestAsync<Permissions.StorageWrite>();
-
-                if (readStatus != PermissionStatus.Granted || writeStatus != PermissionStatus.Granted)
-                {
-                    await DisplayAlert("Внимание", "Разрешите доступ к хранилищу для выбора фото", "ОК");
-                    return;
-                }
-
                 var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
                 {
                     Title = "Выберите фото контакта"
@@ -98,13 +90,13 @@ namespace Phonebook
             }
         }
 
-        private async Task<string> CopyFileToAppDirectory(string sourceFilePath)
+        private Task<string> CopyFileToAppDirectory(string sourceFilePath)
         {
             var fileName = $"contact_{DateTime.Now.Ticks}.jpg";
             var appDataDir = FileSystem.AppDataDirectory;
             var destinationPath = Path.Combine(appDataDir, fileName);
             File.Copy(sourceFilePath, destinationPath, true);
-            return destinationPath;
+            return Task.FromResult(destinationPath);
         }
     }
 }

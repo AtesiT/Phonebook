@@ -17,6 +17,8 @@ public class CoolShader : GraphicsView
         });
     }
 
+    public float Time => _time;
+
     private class ShaderDrawable : IDrawable
     {
         private readonly CoolShader _parent;
@@ -28,19 +30,26 @@ public class CoolShader : GraphicsView
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
-            var time = _parent._time;
+            var time = _parent.Time;
             var hue = (time * 0.1f) % 1.0f;
+
             var color1 = Color.FromHsla(hue, 0.8, 0.4, 1.0);
-            var color2 = Color.FromHsla(hue + 0.3f, 0.7, 0.5, 1.0);
-            var color3 = Color.FromHsla(hue + 0.6f, 0.6, 0.6, 1.0);
-            var gradient = new LinearGradientBrush(
-                new Point(0, 0),
-                new Point(1, 1),
-                new GradientStop[] {
-                    new GradientStop(color1, 0.0f),
-                    new GradientStop(color2, 0.5f),
-                    new GradientStop(color3, 1.0f)
-                });
+            var color2 = Color.FromHsla((hue + 0.3f) % 1.0f, 0.7, 0.5, 1.0);
+            var color3 = Color.FromHsla((hue + 0.6f) % 1.0f, 0.6, 0.6, 1.0);
+
+            // Исправленный способ создания градиента для ICanvas
+            var gradient = new LinearGradientPaint
+            {
+                StartPoint = new Point(0, 0),
+                EndPoint = new Point(1, 1),
+                GradientStops = new PaintGradientStop[]
+                {
+                    new PaintGradientStop(0.0f, color1),
+                    new PaintGradientStop(0.5f, color2),
+                    new PaintGradientStop(1.0f, color3)
+                }
+            };
+
             canvas.SetFillPaint(gradient, dirtyRect);
             canvas.FillRectangle(dirtyRect);
         }

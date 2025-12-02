@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Phonebook"
+             x:Class="Phonebook.SplashScreenPage"
+             BackgroundColor="#1a1a2e">
+
+    <Grid>
+        <local:CoolShader />
+
+        <VerticalStackLayout 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Spacing="20">
+
+            <Image Source="dotnet_bot.png"
+                   HeightRequest="200"
+                   WidthRequest="200" />
+
+            <Label Text="Телефонный справочник"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+            <ActivityIndicator IsRunning="True"
+                               Color="White"
+                               HeightRequest="50" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
