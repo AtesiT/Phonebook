@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-12-02T05:10:21.064</Modified>
+      <Modified>2025-12-02T06:14:37.157</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-12-02T05:10:20.849</Modified>
+      <Modified>2025-12-02T06:14:36.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Phonebook.runtimeconfig.json">
       <PackagePath>Phonebook.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Phonebook.dll">
       <PackagePath>Phonebook.dll</PackagePath>
-      <Modified>2025-12-02T05:10:19.186</Modified>
+      <Modified>2025-12-02T06:14:34.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Phonebook.exe</PackagePath>
-      <Modified>2025-12-02T05:10:19.426</Modified>
+      <Modified>2025-12-02T06:14:34.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Keys And Documents\Labs\4 Course\Phonebook\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -292,7 +292,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Phonebook.deps.json">
       <PackagePath>Phonebook.deps.json</PackagePath>
-      <Modified>2025-12-02T05:10:20.501</Modified>
+      <Modified>2025-12-02T06:14:36.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

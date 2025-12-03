@@ -74,61 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ContactDetailPage.xaml",
-              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\ContactDetailPage.xaml",
-              "RelativeDocumentMoniker": "ContactDetailPage.xaml",
-              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\ContactDetailPage.xaml",
-              "RelativeToolTip": "ContactDetailPage.xaml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-01T06:42:12.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SplashScreen.xaml",
-              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\SplashScreen.xaml",
-              "RelativeDocumentMoniker": "SplashScreen.xaml",
-              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\SplashScreen.xaml",
-              "RelativeToolTip": "SplashScreen.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-01T06:42:44.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:17:54.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.g.i.cs",
-              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "RelativeToolTip": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:28:12.616Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -164,8 +114,44 @@
               "RelativeToolTip": "SplashScreenPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-01T18:15:14.065Z",
+              "WhenOpened": "2025-12-01T18:15:14.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Phonebook.csproj",
+              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\Phonebook.csproj",
+              "RelativeDocumentMoniker": "Phonebook.csproj",
+              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\Phonebook.csproj",
+              "RelativeToolTip": "Phonebook.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowCMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-01T18:13:03.53Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:28:12.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:17:54.212Z"
             },
             {
               "$type": "Document",
@@ -189,21 +175,31 @@
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwCEAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-01T18:16:38.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T18:16:38.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Phonebook.csproj",
-              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\Phonebook.csproj",
-              "RelativeDocumentMoniker": "Phonebook.csproj",
-              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\Phonebook.csproj",
-              "RelativeToolTip": "Phonebook.csproj",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowEMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-01T18:13:03.53Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "SplashScreen.xaml",
+              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\SplashScreen.xaml",
+              "RelativeDocumentMoniker": "SplashScreen.xaml",
+              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\SplashScreen.xaml",
+              "RelativeToolTip": "SplashScreen.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-01T06:42:44.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContactDetailPage.xaml",
+              "DocumentMoniker": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\ContactDetailPage.xaml",
+              "RelativeDocumentMoniker": "ContactDetailPage.xaml",
+              "ToolTip": "D:\\Keys And Documents\\Labs\\4 Course\\Phonebook\\ContactDetailPage.xaml",
+              "RelativeToolTip": "ContactDetailPage.xaml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-01T06:42:12.103Z"
             },
             {
               "$type": "Document",

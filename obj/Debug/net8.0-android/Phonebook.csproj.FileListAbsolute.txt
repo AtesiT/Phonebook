@@ -1059,3 +1059,12 @@ D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\s
 D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiBoxView.java
 D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiShapeView.java
 D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\PlatformTouchGraphicsView.java
+D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\Phonebook.csproj.Up2Date
+D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
+D:\Keys And Documents\Labs\4 Course\Phonebook\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
